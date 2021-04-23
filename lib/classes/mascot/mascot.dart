@@ -88,11 +88,11 @@ class _MascotState extends State<Mascot> {
 
     setState(() {
       if (count >= 0 && count < 10) {
-        widget.currImg = Image.asset("assets/mascots/$name/$name-s1.png").image;
+        widget.currImg = Image.asset("assets/mascots/$name/$name-s1.png");
       } else if (count >= 10 && count < 15) {
-        widget.currImg = Image.asset("assets/mascots/$name/$name-s3.png").image;
+        widget.currImg = Image.asset("assets/mascots/$name/$name-s3.png");
       } else if (count >= 15 && count < 20) {
-        widget.currImg = Image.asset("assets/mascots/$name/$name-s5.png").image;
+        widget.currImg = Image.asset("assets/mascots/$name/$name-s5.png");
       }
     });
 

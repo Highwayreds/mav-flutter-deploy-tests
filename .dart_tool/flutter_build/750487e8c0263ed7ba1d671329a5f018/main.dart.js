@@ -9982,8 +9982,8 @@ _.a=c},
 Er:function(a,b,c){var s=new Y.p8(null)
 s.c=a
 s.r=c
-s.d=U.dn("mascots/"+a+"/"+a+"-g1.gif")
-s.f=s.e=U.dn("mascots/"+a+"/"+a+"-s1.png")
+s.d=U.dn("assets/mascots/"+a+"/"+a+"-g1.gif")
+s.f=s.e=U.dn("assets/mascots/"+a+"/"+a+"-s1.png")
 s.x=b
 return s},
 p8:function p8(a){var _=this
