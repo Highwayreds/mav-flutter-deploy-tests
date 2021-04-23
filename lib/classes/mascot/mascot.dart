@@ -125,7 +125,7 @@ class _MascotState extends State<Mascot> {
           child: FadeInImage(
             key: stickyKey,
             alignment: Alignment.center,
-            placeholder: AssetImage("transparent.png"),
+            placeholder: Image.asset("assets/transparent.png").image,
             image: widget.currImg.image,
           )),
       Expanded(flex: 0, child: HealthBar(widget.count, widget.area)),
