@@ -5,7 +5,7 @@ import 'package:map_visualisation/classes/area.dart';
 import 'package:stacked/stacked.dart';
 
 class MapViewModel extends BaseViewModel {
-  AssetImage img = AssetImage('green.png');
+  Image img = Image.asset('assets/green.png');
   Area bathroomA = Area("bathroomA");
   Area bathroomB = Area("bathroomB");
   Area bar = Area("bar");

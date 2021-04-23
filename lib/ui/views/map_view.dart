@@ -32,7 +32,7 @@ class _MapState extends State {
     return Column(children: [
       Expanded(
           child: Stack(children: <Widget>[
-        Image(image: mapViewModel.img),
+        Image(image: mapViewModel.img.image),
         Image(image: mapViewModel.bathroomA.currImg),
         Image(image: mapViewModel.bathroomB.currImg),
         Image(image: mapViewModel.bar.currImg),
