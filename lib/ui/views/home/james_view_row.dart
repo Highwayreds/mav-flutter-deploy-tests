@@ -97,37 +97,40 @@ class JamesState extends State {
                                 child: Column(children: [
                                   Center(
                                       child: Stack(children: [
+                                    Text("TEST"),
                                     Image(
                                         image: Image.asset("assets/green.png")
                                             .image),
-                                    Image(
-                                      image: model.mapImage.bathroomAImg,
-                                      gaplessPlayback: true,
-                                    ),
-                                    Image(
-                                      image: model.mapImage.bathroomBImg,
-                                      gaplessPlayback: true,
-                                    ),
-                                    Image(
-                                      image: model.mapImage.barImg,
-                                      gaplessPlayback: true,
-                                    ),
-                                    Image(
-                                      image: model.mapImage.a1Img,
-                                      gaplessPlayback: true,
-                                    ),
-                                    Image(
-                                      image: model.mapImage.a2Img,
-                                      gaplessPlayback: true,
-                                    ),
-                                    Image(
-                                      image: model.mapImage.a3Img,
-                                      gaplessPlayback: true,
-                                    ),
-                                    Image(
-                                      image: model.mapImage.a4Img,
-                                      gaplessPlayback: true,
-                                    ),
+                                    // Image(
+                                    //   image:
+                                    //       (model.mapImage.bathroomAImg).image,
+                                    //   gaplessPlayback: true,
+                                    // ),
+                                    // Image(
+                                    //   image:
+                                    //       (model.mapImage.bathroomBImg).image,
+                                    //   gaplessPlayback: true,
+                                    // ),
+                                    // Image(
+                                    //   image: (model.mapImage.barImg).image,
+                                    //   gaplessPlayback: true,
+                                    // ),
+                                    // Image(
+                                    //   image: (model.mapImage.a1Img).image,
+                                    //   gaplessPlayback: true,
+                                    // ),
+                                    // Image(
+                                    //   image: (model.mapImage.a2Img).image,
+                                    //   gaplessPlayback: true,
+                                    // ),
+                                    // Image(
+                                    //   image: (model.mapImage.a3Img).image,
+                                    //   gaplessPlayback: true,
+                                    // ),
+                                    // Image(
+                                    //   image: (model.mapImage.a4Img).image,
+                                    //   gaplessPlayback: true,
+                                    // ),
                                   ]))
                                 ])),
                             Expanded(
