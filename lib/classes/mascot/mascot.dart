@@ -14,14 +14,14 @@ class Mascot extends StatefulWidget {
   String _name;
   String get name => _name;
 
-  AssetImage _gif;
-  AssetImage get gif => _gif;
+  Image _gif;
+  Image get gif => _gif;
 
-  AssetImage _img;
-  AssetImage get img => _img;
+  Image _img;
+  Image get img => _img;
 
-  AssetImage _currImg;
-  AssetImage get currImg => _currImg;
+  Image _currImg;
+  Image get currImg => _currImg;
 
   set currImg(value) {
     _currImg = value;
@@ -34,8 +34,8 @@ class Mascot extends StatefulWidget {
   Mascot(mascot, areaCount, area) {
     this._name = mascot;
     this.area = area;
-    this._gif = AssetImage("mascots/$name/$name-g1.gif");
-    this._img = AssetImage("mascots/$name/$name-s1.png");
+    this._gif = Image.asset("mascots/$name/$name-g1.gif");
+    this._img = Image.asset("mascots/$name/$name-s1.png");
     this._currImg = this._img;
     count = areaCount;
 
@@ -59,16 +59,16 @@ class _MascotState extends State<Mascot> {
     super.didChangeDependencies();
     String name = widget.name;
 
-    precacheImage(widget.img, context);
-    precacheImage(widget.gif, context);
-    precacheImage(AssetImage("mascots/$name/$name-s1.png"), context);
-    precacheImage(AssetImage("mascots/$name/$name-s2.png"), context);
-    precacheImage(AssetImage("mascots/$name/$name-s3.png"), context);
-    precacheImage(AssetImage("mascots/$name/$name-s4.png"), context);
-    precacheImage(AssetImage("mascots/$name/$name-s5.png"), context);
-    precacheImage(AssetImage("mascots/healthbar/full.png"), context);
-    precacheImage(AssetImage("mascots/healthbar/half.png"), context);
-    precacheImage(AssetImage("mascots/healthbar/empty.png"), context);
+    precacheImage(widget.img.image, context);
+    precacheImage(widget.gif.image, context);
+    precacheImage(Image.asset("mascots/$name/$name-s1.png").image, context);
+    precacheImage(Image.asset("mascots/$name/$name-s2.png").image, context);
+    precacheImage(Image.asset("mascots/$name/$name-s3.png").image, context);
+    precacheImage(Image.asset("mascots/$name/$name-s4.png").image, context);
+    precacheImage(Image.asset("mascots/$name/$name-s5.png").image, context);
+    precacheImage(Image.asset("mascots/healthbar/full.png").image, context);
+    precacheImage(Image.asset("mascots/healthbar/half.png").image, context);
+    precacheImage(Image.asset("mascots/healthbar/empty.png").image, context);
   }
 
   // switch to using a switch case for readability
@@ -80,11 +80,11 @@ class _MascotState extends State<Mascot> {
 
     setState(() {
       if (count >= 0 && count < 10) {
-        widget.currImg = AssetImage("mascots/$name/$name-s1.png");
+        widget.currImg = Image.asset("mascots/$name/$name-s1.png");
       } else if (count >= 10 && count < 15) {
-        widget.currImg = AssetImage("mascots/$name/$name-s3.png");
+        widget.currImg = Image.asset("mascots/$name/$name-s3.png");
       } else if (count >= 15 && count < 20) {
-        widget.currImg = AssetImage("mascots/$name/$name-s5.png");
+        widget.currImg = Image.asset("mascots/$name/$name-s5.png");
       }
     });
 
@@ -118,7 +118,7 @@ class _MascotState extends State<Mascot> {
             key: stickyKey,
             alignment: Alignment.center,
             placeholder: AssetImage("transparent.png"),
-            image: widget.currImg,
+            image: widget.currImg.image,
           )),
       Expanded(flex: 0, child: HealthBar(widget.count, widget.area)),
       Expanded(

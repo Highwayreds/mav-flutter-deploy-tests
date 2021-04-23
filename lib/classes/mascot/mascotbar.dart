@@ -16,7 +16,7 @@ class MascotBarState extends State<MascotBar> {
   Widget build(BuildContext context) {
     return Row(children: [
       for (var mascot in widget.mascotArray)
-        Expanded(child: Image(image: mascot.currImg))
+        Expanded(child: Image(image: mascot.currImg.image))
     ]);
   }
 }
