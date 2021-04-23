@@ -59378,35 +59378,35 @@ q=p.a.d.c
 s=p.c
 s.toString
 U.fW(q,s)
-s=U.dn("mascots/"+r+"/"+r+"-s1.png")
+s=U.dn("assets/mascots/"+r+"/"+r+"-s1.png")
 q=p.c
 q.toString
 U.fW(s.c,q)
-q=U.dn("mascots/"+r+"/"+r+"-s2.png")
+q=U.dn("assets/mascots/"+r+"/"+r+"-s2.png")
 s=p.c
 s.toString
 U.fW(q.c,s)
-s=U.dn("mascots/"+r+"/"+r+"-s3.png")
+s=U.dn("assets/mascots/"+r+"/"+r+"-s3.png")
 q=p.c
 q.toString
 U.fW(s.c,q)
-q=U.dn("mascots/"+r+"/"+r+"-s4.png")
+q=U.dn("assets/mascots/"+r+"/"+r+"-s4.png")
 s=p.c
 s.toString
 U.fW(q.c,s)
-s=U.dn("mascots/"+r+"/"+r+"-s5.png")
+s=U.dn("assets/mascots/"+r+"/"+r+"-s5.png")
 q=p.c
 q.toString
 U.fW(s.c,q)
-q=U.dn("mascots/healthbar/full.png")
+q=U.dn("assets/mascots/healthbar/full.png")
 s=p.c
 s.toString
 U.fW(q.c,s)
-s=U.dn("mascots/healthbar/half.png")
+s=U.dn("assets/mascots/healthbar/half.png")
 q=p.c
 q.toString
 U.fW(s.c,q)
-q=U.dn("mascots/healthbar/empty.png")
+q=U.dn("assets/mascots/healthbar/empty.png")
 s=p.c
 s.toString
 U.fW(q.c,s)},
@@ -59443,13 +59443,13 @@ $0:function(){var s,r=this,q=r.b
 if(q>=0&&q<10){q=r.a.a
 q.toString
 s=r.c
-q.f=U.dn("mascots/"+s+"/"+s+"-s1.png")}else if(q>=10&&q<15){q=r.a.a
+q.f=U.dn("assets/mascots/"+s+"/"+s+"-s1.png").c}else if(q>=10&&q<15){q=r.a.a
 q.toString
 s=r.c
-q.f=U.dn("mascots/"+s+"/"+s+"-s3.png")}else if(q>=15&&q<20){q=r.a.a
+q.f=U.dn("assets/mascots/"+s+"/"+s+"-s3.png").c}else if(q>=15&&q<20){q=r.a.a
 q.toString
 s=r.c
-q.f=U.dn("mascots/"+s+"/"+s+"-s5.png")}},
+q.f=U.dn("assets/mascots/"+s+"/"+s+"-s5.png").c}},
 $S:1}
 T.uP.prototype={
 aR:function(){return new T.Es(C.m)}}
