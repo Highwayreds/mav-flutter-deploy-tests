@@ -61,14 +61,22 @@ class _MascotState extends State<Mascot> {
 
     precacheImage(widget.img.image, context);
     precacheImage(widget.gif.image, context);
-    precacheImage(Image.asset("mascots/$name/$name-s1.png").image, context);
-    precacheImage(Image.asset("mascots/$name/$name-s2.png").image, context);
-    precacheImage(Image.asset("mascots/$name/$name-s3.png").image, context);
-    precacheImage(Image.asset("mascots/$name/$name-s4.png").image, context);
-    precacheImage(Image.asset("mascots/$name/$name-s5.png").image, context);
-    precacheImage(Image.asset("mascots/healthbar/full.png").image, context);
-    precacheImage(Image.asset("mascots/healthbar/half.png").image, context);
-    precacheImage(Image.asset("mascots/healthbar/empty.png").image, context);
+    precacheImage(
+        Image.asset("assets/mascots/$name/$name-s1.png").image, context);
+    precacheImage(
+        Image.asset("assets/mascots/$name/$name-s2.png").image, context);
+    precacheImage(
+        Image.asset("assets/mascots/$name/$name-s3.png").image, context);
+    precacheImage(
+        Image.asset("assets/mascots/$name/$name-s4.png").image, context);
+    precacheImage(
+        Image.asset("assets/mascots/$name/$name-s5.png").image, context);
+    precacheImage(
+        Image.asset("assets/mascots/healthbar/full.png").image, context);
+    precacheImage(
+        Image.asset("assets/mascots/healthbar/half.png").image, context);
+    precacheImage(
+        Image.asset("assets/mascots/healthbar/empty.png").image, context);
   }
 
   // switch to using a switch case for readability
@@ -80,11 +88,11 @@ class _MascotState extends State<Mascot> {
 
     setState(() {
       if (count >= 0 && count < 10) {
-        widget.currImg = Image.asset("mascots/$name/$name-s1.png");
+        widget.currImg = Image.asset("assets/mascots/$name/$name-s1.png");
       } else if (count >= 10 && count < 15) {
-        widget.currImg = Image.asset("mascots/$name/$name-s3.png");
+        widget.currImg = Image.asset("assets/mascots/$name/$name-s3.png");
       } else if (count >= 15 && count < 20) {
-        widget.currImg = Image.asset("mascots/$name/$name-s5.png");
+        widget.currImg = Image.asset("assets/mascots/$name/$name-s5.png");
       }
     });
 
