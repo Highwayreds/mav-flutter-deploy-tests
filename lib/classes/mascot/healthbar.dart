@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 import 'heart.dart';
 
 class HealthBar extends StatefulWidget {
-  Image fullHealth = Image.asset("mascots/healthbar/full.png");
-  Image halfHealth = Image.asset("mascots/healthbar/half.png");
-  Image empty = Image.asset("mascots/healthbar/empty.png");
+  Image fullHealth = Image.asset("assets/mascots/healthbar/full.png");
+  Image halfHealth = Image.asset("assets/mascots/healthbar/half.png");
+  Image empty = Image.asset("assets/mascots/healthbar/empty.png");
 
   Heart heart1 = Heart(12);
   Heart heart2 = Heart(10);
@@ -82,8 +82,9 @@ class _HealthBarState extends State<HealthBar> {
                       children: [
                         Expanded(
                             child: Image(
-                                image:
-                                    AssetImage("mascots/healthbar/heart.png"))),
+                                image: Image.asset(
+                                        "assets/mascots/healthbar/heart.png")
+                                    .image)),
                         Expanded(
                             child: Image(
                           image: widget.heart1Img.image,

@@ -9,9 +9,9 @@ class Heart {
   int bound;
 
   Heart(boundary) {
-    this.full = Image.asset("mascots/healthbar/full.png");
-    this.half = Image.asset("mascots/healthbar/half.png");
-    this.empty = Image.asset("mascots/healthbar/empty.png");
+    this.full = Image.asset("assests/mascots/healthbar/full.png");
+    this.half = Image.asset("assets/mascots/healthbar/half.png");
+    this.empty = Image.asset("assets/mascots/healthbar/empty.png");
 
     this.bound = boundary;
   }
