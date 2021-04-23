@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 import 'heart.dart';
 
 class HealthBar extends StatefulWidget {
-  AssetImage fullHealth = AssetImage("mascots/healthbar/full.png");
-  AssetImage halfHealth = AssetImage("mascots/healthbar/half.png");
-  AssetImage empty = AssetImage("mascots/healthbar/empty.png");
+  Image fullHealth = Image.asset("mascots/healthbar/full.png");
+  Image halfHealth = Image.asset("mascots/healthbar/half.png");
+  Image empty = Image.asset("mascots/healthbar/empty.png");
 
   Heart heart1 = Heart(12);
   Heart heart2 = Heart(10);
@@ -18,11 +18,11 @@ class HealthBar extends StatefulWidget {
 
   List<Heart> get hearts => [heart1, heart2, heart3, heart4, heart5];
 
-  AssetImage get heart1Img => heart1.currImg;
-  AssetImage get heart2Img => heart2.currImg;
-  AssetImage get heart3Img => heart3.currImg;
-  AssetImage get heart4Img => heart4.currImg;
-  AssetImage get heart5Img => heart5.currImg;
+  Image get heart1Img => heart1.currImg;
+  Image get heart2Img => heart2.currImg;
+  Image get heart3Img => heart3.currImg;
+  Image get heart4Img => heart4.currImg;
+  Image get heart5Img => heart5.currImg;
 
   int _currHealth;
   int get currHealth => _currHealth;
@@ -60,9 +60,9 @@ class _HealthBarState extends State<HealthBar> {
   void didChangeDependencies() {
     super.didChangeDependencies();
 
-    precacheImage(widget.fullHealth, context);
-    precacheImage(widget.halfHealth, context);
-    precacheImage(widget.empty, context);
+    precacheImage(widget.fullHealth.image, context);
+    precacheImage(widget.halfHealth.image, context);
+    precacheImage(widget.empty.image, context);
   }
 
   @override
@@ -86,27 +86,27 @@ class _HealthBarState extends State<HealthBar> {
                                     AssetImage("mascots/healthbar/heart.png"))),
                         Expanded(
                             child: Image(
-                          image: widget.heart1Img,
+                          image: widget.heart1Img.image,
                           gaplessPlayback: true,
                         )),
                         Expanded(
                             child: Image(
-                          image: widget.heart2Img,
+                          image: widget.heart2Img.image,
                           gaplessPlayback: true,
                         )),
                         Expanded(
                             child: Image(
-                          image: widget.heart3Img,
+                          image: widget.heart3Img.image,
                           gaplessPlayback: true,
                         )),
                         Expanded(
                             child: Image(
-                          image: widget.heart4Img,
+                          image: widget.heart4Img.image,
                           gaplessPlayback: true,
                         )),
                         Expanded(
                             child: Image(
-                          image: widget.heart5Img,
+                          image: widget.heart5Img.image,
                           gaplessPlayback: true,
                         )),
                       ],

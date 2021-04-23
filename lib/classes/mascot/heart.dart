@@ -1,17 +1,17 @@
 import 'package:flutter/cupertino.dart';
 
 class Heart {
-  AssetImage full;
-  AssetImage half;
-  AssetImage empty;
+  Image full;
+  Image half;
+  Image empty;
 
-  AssetImage currImg;
+  Image currImg;
   int bound;
 
   Heart(boundary) {
-    this.full = AssetImage("mascots/healthbar/full.png");
-    this.half = AssetImage("mascots/healthbar/half.png");
-    this.empty = AssetImage("mascots/healthbar/empty.png");
+    this.full = Image.asset("mascots/healthbar/full.png");
+    this.half = Image.asset("mascots/healthbar/half.png");
+    this.empty = Image.asset("mascots/healthbar/empty.png");
 
     this.bound = boundary;
   }
