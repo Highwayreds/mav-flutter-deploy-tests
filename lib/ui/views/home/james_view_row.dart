@@ -97,7 +97,7 @@ class JamesState extends State {
                                 child: Column(children: [
                                   Center(
                                       child: Stack(children: [
-                                    Text("TEST"),
+                                    // Text("TEST"),
                                     Image(
                                         image: Image.asset("assets/green.png")
                                             .image),
