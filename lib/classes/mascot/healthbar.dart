@@ -105,11 +105,11 @@ class _HealthBarState extends State<HealthBar> {
                           image: widget.heart4Img.image,
                           gaplessPlayback: true,
                         )),
-                        Expanded(
-                            child: Image(
-                          image: widget.heart5Img.image,
-                          gaplessPlayback: true,
-                        )),
+                        // Expanded(
+                        //     child: Image(
+                        //   image: widget.heart5Img.image,
+                        //   gaplessPlayback: true,
+                        // )),
                       ],
                     )))
           ],
