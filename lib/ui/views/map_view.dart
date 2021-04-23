@@ -17,14 +17,14 @@ class _MapState extends State {
   void didChangeDependencies() {
     super.didChangeDependencies();
 
-    precacheImage(AssetImage('orange.png'), context);
-    precacheImage(AssetImage('red.png'), context);
-    precacheImage(AssetImage('bathroomA/orange.png'), context);
-    precacheImage(AssetImage('bathroomA/red.png'), context);
-    precacheImage(AssetImage('bathroomB/orange.png'), context);
-    precacheImage(AssetImage('bathroomB/red.png'), context);
-    precacheImage(AssetImage('bar/orange.png'), context);
-    precacheImage(AssetImage('bar/red.png'), context);
+    precacheImage(Image.asset('assets/orange.png').image, context);
+    precacheImage(Image.asset('assets/red.png').image, context);
+    precacheImage(Image.asset('assets/bathroomA/orange.png').image, context);
+    precacheImage(Image.asset('assets/bathroomA/red.png').image, context);
+    precacheImage(Image.asset('assets/bathroomB/orange.png').image, context);
+    precacheImage(Image.asset('assets/bathroomB/red.png').image, context);
+    precacheImage(Image.asset('assets/bar/orange.png').image, context);
+    precacheImage(Image.asset('assets/bar/red.png').image, context);
   }
 
   @override
@@ -33,9 +33,9 @@ class _MapState extends State {
       Expanded(
           child: Stack(children: <Widget>[
         Image(image: mapViewModel.img.image),
-        Image(image: mapViewModel.bathroomA.currImg),
-        Image(image: mapViewModel.bathroomB.currImg),
-        Image(image: mapViewModel.bar.currImg),
+        Image(image: mapViewModel.bathroomA.currImg.image),
+        Image(image: mapViewModel.bathroomB.currImg.image),
+        Image(image: mapViewModel.bar.currImg.image),
       ])
           // used a floating action button to update pics
           // floatingActionButton: FloatingActionButton(

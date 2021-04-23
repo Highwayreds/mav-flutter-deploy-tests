@@ -1,18 +1,18 @@
 import 'package:flutter/cupertino.dart';
 
 class Area {
-  AssetImage currImg;
-  AssetImage oldImg;
-  AssetImage hide;
-  AssetImage green;
-  AssetImage orange;
-  AssetImage red;
+  Image currImg;
+  Image oldImg;
+  Image hide;
+  Image green;
+  Image orange;
+  Image red;
 
   Area(path) {
-    this.green = AssetImage(path + "/green.png");
-    this.orange = AssetImage(path + "/orange.png");
-    this.red = AssetImage(path + "/red.png");
-    this.hide = AssetImage("transparent.png");
+    this.green = Image.asset(path + "/green.png");
+    this.orange = Image.asset(path + "/orange.png");
+    this.red = Image.asset(path + "/red.png");
+    this.hide = Image.asset("transparent.png");
 
     this.currImg = this.hide;
     this.oldImg = this.hide;

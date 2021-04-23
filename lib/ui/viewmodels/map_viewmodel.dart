@@ -6,33 +6,33 @@ import 'package:stacked/stacked.dart';
 
 class MapViewModel extends BaseViewModel {
   Image img = Image.asset('assets/green.png');
-  Area bathroomA = Area("bathroomA");
-  Area bathroomB = Area("bathroomB");
-  Area bar = Area("bar");
-  Area a1 = Area("aisles/1");
-  Area a2 = Area("aisles/2");
-  Area a3 = Area("aisles/3");
-  Area a4 = Area("aisles/4");
+  Area bathroomA = Area("assets/bathroomA");
+  Area bathroomB = Area("assets/bathroomB");
+  Area bar = Area("assets/bar");
+  Area a1 = Area("assets/aisles/1");
+  Area a2 = Area("assets/aisles/2");
+  Area a3 = Area("assets/aisles/3");
+  Area a4 = Area("assets/aisles/4");
 
-  AssetImage get bathroomAImg => bathroomA.currImg;
-  AssetImage get bathroomBImg => bathroomB.currImg;
-  AssetImage get barImg => bar.currImg;
-  AssetImage get a1Img => a1.currImg;
-  AssetImage get a2Img => a2.currImg;
-  AssetImage get a3Img => a3.currImg;
-  AssetImage get a4Img => a4.currImg;
+  Image get bathroomAImg => bathroomA.currImg;
+  Image get bathroomBImg => bathroomB.currImg;
+  Image get barImg => bar.currImg;
+  Image get a1Img => a1.currImg;
+  Image get a2Img => a2.currImg;
+  Image get a3Img => a3.currImg;
+  Image get a4Img => a4.currImg;
 
-  AssetImage get prevBathAImg => AssetImage("bathroomA/red.png");
+  AssetImage get prevBathAImg => Image.asset("assets/bathroomA/red.png").image;
   set prevBathAImg(value) {
     return value;
   }
 
-  AssetImage get prevBathBImg => bathroomB.oldImg;
-  AssetImage get prevBarImg => bar.oldImg;
-  AssetImage get prevA1Img => a1.oldImg;
-  AssetImage get prevA2Img => a2.oldImg;
-  AssetImage get prevA3Img => a3.oldImg;
-  AssetImage get prevA4Img => a4.oldImg;
+  Image get prevBathBImg => bathroomB.oldImg;
+  Image get prevBarImg => bar.oldImg;
+  Image get prevA1Img => a1.oldImg;
+  Image get prevA2Img => a2.oldImg;
+  Image get prevA3Img => a3.oldImg;
+  Image get prevA4Img => a4.oldImg;
 
   MapViewModel(
       bathACount, bathBCount, barCount, a1Count, a2Count, a3Count, a4Count) {
