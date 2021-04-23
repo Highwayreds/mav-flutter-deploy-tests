@@ -28,7 +28,9 @@ class JamesState extends State {
                   backgroundColor: Color(0xff5753a4),
                   title: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
-                      children: [Image(image: AssetImage('arq.png'))])),
+                      children: [
+                        Image(image: Image.asset('assets/arq.png').image)
+                      ])),
               body: Row(children: [
                 Column(children: [
                   Expanded(
@@ -95,7 +97,9 @@ class JamesState extends State {
                                 child: Column(children: [
                                   Center(
                                       child: Stack(children: [
-                                    Image(image: AssetImage("green.png")),
+                                    Image(
+                                        image: Image.asset("assets/green.png")
+                                            .image),
                                     Image(
                                       image: model.mapImage.bathroomAImg,
                                       gaplessPlayback: true,

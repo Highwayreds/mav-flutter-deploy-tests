@@ -21,7 +21,9 @@ class JamesState extends State {
                   backgroundColor: Color(0xff5753a4),
                   title: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
-                      children: [Image(image: AssetImage('arq.png'))])),
+                      children: [
+                        Image(image: Image.asset('assets/arq.png').image)
+                      ])),
               body: Column(
                 children: [
                   Row(
@@ -47,7 +49,7 @@ class JamesState extends State {
                                     width: 1, color: Color(0xff5753a4))),
                             child: Row(
                               children: [
-                                Image.asset("arq.png"),
+                                Image.asset("assets/arq.png"),
                                 Text("/ champions of change",
                                     style: TextStyle(
                                         color: Color(0xff5753a4), fontSize: 70))
@@ -73,13 +75,13 @@ class JamesState extends State {
                                   border: Border.all(
                                       width: 1, color: Color(0xff5753a4))),
                               child: Column(children: [
-                                Image.asset("arq.png"),
-                                Image.asset("arq.png"),
-                                Image.asset("arq.png"),
-                                Image.asset("arq.png"),
-                                Image.asset("arq.png"),
-                                Image.asset("arq.png"),
-                                Image.asset("arq.png"),
+                                Image.asset("assets/arq.png"),
+                                Image.asset("assets/arq.png"),
+                                Image.asset("assets/arq.png"),
+                                Image.asset("assets/arq.png"),
+                                Image.asset("assets/arq.png"),
+                                Image.asset("assets/arq.png"),
+                                Image.asset("assets/arq.png"),
                               ]))),
                       Expanded(
                           flex: 3,
@@ -90,7 +92,9 @@ class JamesState extends State {
                               child: Column(children: [
                                 Center(
                                     child: Stack(children: [
-                                  Image(image: AssetImage("green.png")),
+                                  Image(
+                                      image: Image.asset("assets/green.png")
+                                          .image),
                                   Image(image: model.mapImage.bathroomAImg),
                                   Image(image: model.mapImage.bathroomBImg),
                                   Image(image: model.mapImage.barImg),

@@ -22,7 +22,7 @@ class MapViewModel extends BaseViewModel {
   Image get a3Img => a3.currImg;
   Image get a4Img => a4.currImg;
 
-  AssetImage get prevBathAImg => Image.asset("assets/bathroomA/red.png").image;
+  Image get prevBathAImg => Image.asset("assets/bathroomA/red.png");
   set prevBathAImg(value) {
     return value;
   }

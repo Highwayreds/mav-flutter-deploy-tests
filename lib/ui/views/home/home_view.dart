@@ -20,35 +20,44 @@ class _HomeState extends State with SingleTickerProviderStateMixin {
   void didChangeDependencies() {
     super.didChangeDependencies();
 
-    precacheImage(AssetImage('orange.png'), context);
-    precacheImage(AssetImage('red.png'), context);
-    precacheImage(AssetImage('bathroomA/orange.png'), context);
-    precacheImage(AssetImage('bathroomA/red.png'), context);
-    precacheImage(AssetImage('bathroomB/orange.png'), context);
-    precacheImage(AssetImage('bathroomB/red.png'), context);
-    precacheImage(AssetImage('bar/orange.png'), context);
-    precacheImage(AssetImage('bar/red.png'), context);
-    precacheImage(AssetImage('aisles/1/orange.png'), context);
-    precacheImage(AssetImage('aisles/1/red.png'), context);
-    precacheImage(AssetImage('aisles/2/orange.png'), context);
-    precacheImage(AssetImage('aisles/2/red.png'), context);
-    precacheImage(AssetImage('aisles/3/orange.png'), context);
-    precacheImage(AssetImage('aisles/3/red.png'), context);
-    precacheImage(AssetImage('aisles/4/orange.png'), context);
-    precacheImage(AssetImage('aisles/4/red.png'), context);
+    precacheImage(Image.asset('assets/orange.png').image, context);
+    precacheImage(Image.asset('assets/red.png').image, context);
+    precacheImage(Image.asset('assets/bathroomA/orange.png').image, context);
+    precacheImage(Image.asset('assets/bathroomA/red.png').image, context);
+    precacheImage(Image.asset('assets/bathroomB/orange.png').image, context);
+    precacheImage(Image.asset('assets/bathroomB/red.png').image, context);
+    precacheImage(Image.asset('assets/bar/orange.png').image, context);
+    precacheImage(Image.asset('assets/bar/red.png').image, context);
+    precacheImage(Image.asset('assets/aisles/1/orange.png').image, context);
+    precacheImage(Image.asset('assets/aisles/1/red.png').image, context);
+    precacheImage(Image.asset('assets/aisles/2/orange.png').image, context);
+    precacheImage(Image.asset('assets/aisles/2/red.png').image, context);
+    precacheImage(Image.asset('assets/aisles/3/orange.png').image, context);
+    precacheImage(Image.asset('assets/aisles/3/red.png').image, context);
+    precacheImage(Image.asset('assets/aisles/4/orange.png').image, context);
+    precacheImage(Image.asset('assets/aisles/4/red.png').image, context);
 
-    precacheImage(AssetImage("mascots/cuppy/cuppy-s1.png"), context);
-    precacheImage(AssetImage("mascots/cuppy/cuppy-s2.png"), context);
-    precacheImage(AssetImage("mascots/cuppy/cuppy-s3.png"), context);
-    precacheImage(AssetImage("mascots/cuppy/cuppy-s4.png"), context);
-    precacheImage(AssetImage("mascots/cuppy/cuppy-s5.png"), context);
-    precacheImage(AssetImage("mascots/cuppy/cuppy-g1.gif"), context);
+    precacheImage(
+        Image.asset("assets/mascots/cuppy/cuppy-s1.png").image, context);
+    precacheImage(
+        Image.asset("assets/mascots/cuppy/cuppy-s2.png").image, context);
+    precacheImage(
+        Image.asset("assets/mascots/cuppy/cuppy-s3.png").image, context);
+    precacheImage(
+        Image.asset("assets/mascots/cuppy/cuppy-s4.png").image, context);
+    precacheImage(
+        Image.asset("assets/mascots/cuppy/cuppy-s5.png").image, context);
+    precacheImage(
+        Image.asset("assets/mascots/cuppy/cuppy-g1.gif").image, context);
 
-    precacheImage(AssetImage("mascots/boggy/boggy-s1.png"), context);
+    precacheImage(
+        Image.asset("assets/mascots/boggy/boggy-s1.png").image, context);
 
-    precacheImage(AssetImage("mascots/dobby/dobby-s1.png"), context);
+    precacheImage(
+        Image.asset("assets/mascots/dobby/dobby-s1.png").image, context);
 
-    precacheImage(AssetImage("mascots/lector/lector-s1.png"), context);
+    precacheImage(
+        Image.asset("assets/mascots/lector/lector-s1.png").image, context);
   }
 
   AnimationController controller;
@@ -110,8 +119,9 @@ class _HomeState extends State with SingleTickerProviderStateMixin {
                     Center(
                         child: Stack(children: [
                       FadeInImage(
-                        placeholder: AssetImage("transparent.png"),
-                        image: AssetImage("green.png"),
+                        placeholder:
+                            Image.asset("assets/transparent.png").image,
+                        image: Image.asset("assets/green.png").image,
                       ),
                       FadeInImage(
                           placeholder: model.mapImage.prevBathAImg,

@@ -4,7 +4,7 @@ class IconDetail extends StatelessWidget {
   String iconImage;
   String iconTitle;
   String iconDescription;
-  AssetImage descriptionImage;
+  Image descriptionImage;
 
   IconDetail(this.iconImage, this.iconTitle, this.iconDescription,
       {this.descriptionImage});
@@ -14,7 +14,7 @@ class IconDetail extends StatelessWidget {
     return Container(
         child: Column(children: [
       Image(
-        image: AssetImage(iconImage),
+        image: Image.asset(iconImage).image,
       ),
       Text(iconTitle),
       Text(iconDescription)
