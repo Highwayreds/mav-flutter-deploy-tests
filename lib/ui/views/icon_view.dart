@@ -13,16 +13,17 @@ class _IconViewState extends State with SingleTickerProviderStateMixin {
     return Container(
         height: 200,
         child: Row(children: [
+          // Expanded(child: Text("TEST")),
           Expanded(
               child:
                   Image(image: Image.asset("assets/icons/red_dot.png").image)),
-          Expanded(
-              child: Image(
-                  image: Image.asset("assets/icons/digital_twin.png").image)),
-          Expanded(
-              child: Image(image: Image.asset("assets/icons/count.png").image)),
-          Expanded(
-              child: Image(image: Image.asset("assets/icons/queue.png").image)),
+          // Expanded(
+          //     child: Image(
+          //         image: Image.asset("assets/icons/digital_twin.png").image)),
+          // Expanded(
+          //     child: Image(image: Image.asset("assets/icons/count.png").image)),
+          // Expanded(
+          //     child: Image(image: Image.asset("assets/icons/queue.png").image)),
         ]));
   }
 }
