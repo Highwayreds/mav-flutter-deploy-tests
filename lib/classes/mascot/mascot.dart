@@ -34,8 +34,8 @@ class Mascot extends StatefulWidget {
   Mascot(mascot, areaCount, area) {
     this._name = mascot;
     this.area = area;
-    this._gif = Image.asset("mascots/$name/$name-g1.gif");
-    this._img = Image.asset("mascots/$name/$name-s1.png");
+    this._gif = Image.asset("assets/mascots/$name/$name-g1.gif");
+    this._img = Image.asset("assets/mascots/$name/$name-s1.png");
     this._currImg = this._img;
     count = areaCount;
 
